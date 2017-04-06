@@ -55,10 +55,9 @@ function sendEmail() {
 			data:{name: formName, email: formEmail, subject: formSubject, message: formMessage},
 			type:'POST',
 			success:function(data){
-				alert(data);
 			}
 		});
-		$( "#dialog" ).dialog( "open" );
-	}
+		 $("#dialog").dialog({ modal: true });
+		}
 };
 
