@@ -39,7 +39,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "kilogram")
@@ -62,7 +62,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "ton")
@@ -85,7 +85,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "gram")
@@ -108,7 +108,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "ounce")
@@ -131,7 +131,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 	} 

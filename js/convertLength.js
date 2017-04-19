@@ -52,7 +52,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "centimeter")
@@ -87,7 +87,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "inch")
@@ -123,7 +123,7 @@ var convertClick = function ()
 			
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "foot")
@@ -158,7 +158,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "meter")
@@ -193,7 +193,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 	else if(dropFrom == "yard")
@@ -228,7 +228,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 	else if(dropFrom == "mile")
@@ -263,7 +263,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		
@@ -299,7 +299,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 	} 

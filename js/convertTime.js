@@ -35,7 +35,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "minute")
@@ -54,7 +54,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "hour")
@@ -73,7 +73,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 			else if(dropFrom == "day")
@@ -92,7 +92,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 	} 

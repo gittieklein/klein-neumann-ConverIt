@@ -31,7 +31,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "celcius")
@@ -46,7 +46,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 		else if(dropFrom == "kelvin")
@@ -61,7 +61,7 @@ var convertClick = function ()
 			}
 			else
 			{
-				alert("Convert to and from have to be different units of measure");
+				document.getElementById("error").innerHTML = "*Convert to and from have to be different units of measure";
 			}
 		}
 	} 
