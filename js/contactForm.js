@@ -57,7 +57,8 @@ function sendEmail() {
 			success:function(data){
 			}
 		});
+		
 		 $("#dialog").dialog({ modal: true });
-		}
+	}
 };
 
