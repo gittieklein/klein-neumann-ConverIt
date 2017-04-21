@@ -70,13 +70,14 @@
 			<section data-role="content">
 				<form action="mobile.asp" method="post" data-ajax="false">
 		            <label for="name">Name:</label>
-		            <input type="text" name="name" id="name">
+		            <input type="text" name="name" id="name" required>
 		            <label for="email">Email:</label>
-		            <input type="email" name="email" id="email">
+		            <input type="email" name="email" id="email" required>
 		            <label for="subject">Subject:</label>
-		            <input type="text" name="subject" id="subject">
+		            <input type="text" name="subject" id="subject" required>
 		            <label for="message">Message:</label>
-		            <textarea type="text" name="message" id="message"></textarea>
+		            <textarea type="text" name="message" id="message" required></textarea>
+		            <button>submit</button>
 				</form>
 			</section>
 		</div>
