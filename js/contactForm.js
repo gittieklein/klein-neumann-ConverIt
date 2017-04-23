@@ -71,7 +71,9 @@ function sendEmail() {
 
 var resetContactForm = function()
 {	
-	$('#modalContact').modal('hide'); 
+	
+	$("#modalContact .close").click();
+	
 	$('#modalContact').find('#modal-title').html('<h4>Contact Us</h4>');
 
 	$('#modalContact').find('#modal-body').html('<div class="form-group">'+
@@ -94,4 +96,6 @@ var resetContactForm = function()
 												'<div class="form-group" style="padding-top: 20px;">'+
 												'<div class="col-md-12"><textarea type="text" id="varMessage" class="form-control" name="detail" placeholder="Message" ></textarea></div></div>'+
 												'<div class="form-group" style="padding-top: 75px; margin-bottom: -5px"><button type="button" id= "submit_button" class="btn btn-success center-block" onclick="sendEmail()">Submit</button></div>'	);
-}
+
+
+};
