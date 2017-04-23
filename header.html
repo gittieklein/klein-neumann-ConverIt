@@ -59,33 +59,23 @@
 				</ul>
 			</div>
 		</nav>
-		
-		<script>
-			  $( function() {
-			    $( "#dialog" ).dialog({
-			    	autoOpen: false
-			    	});
-			  } );
-		</script>
 			
 	</head>
 	
 	<body>
-		
-		
+			
 		<!-- Modal -->
 		<div class="modal fade" id="modalContact" role="dialog">
 			<div class="modal-dialog ">
-
 				<!-- Modal content-->
 				<div class="modal-content" >
 					<div class="modal-header">
 						<button type="button" class="close" id="close" data-dismiss="modal">
 							&times;
 						</button>
-						<h4 class="modal-title">Contact Us</h4>
+						<h4 class="modal-title" id="modal-title">Contact Us</h4>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body" id="modal-body">
 						<div class="form-group">
 							<div class="col-md-8">
 								<input type="text" id="varName" class="form-control" name="name" placeholder= "Name" />
@@ -121,18 +111,11 @@
 							</button>
 						</div>
 					</div>
-
 				</div>
-
 			</div>
 		</div>
 
-		<div id="dialog" title="Your message was sent!">
-			<p>
-				Thank you for contacting convertIt.com
-				You will hear back from us shortly.
-			</p>
-		</div>
+		
 		
 	</body>
 

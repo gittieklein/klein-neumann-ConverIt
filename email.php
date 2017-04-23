@@ -52,8 +52,8 @@
 		$result = false; 
 
 	if($result)
-		echo "true";
-	else {
-		echo "false";
+ 		echo("email sent");
+ 	else {
+ 		echo("there was an issue sending your email. please try again");
 	}
 ?>
