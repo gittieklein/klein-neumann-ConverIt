@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
+		<!--carousel plugin-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- carousel plugin-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -17,6 +21,10 @@
 		<!-- Include the jQuery Mobile library -->
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		
+		<!-- carousel plugin-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 		
 	</head>
 	<body>
@@ -34,10 +42,23 @@
 				</div>
 			</header>
 			<section data-role="content">
-				<p>home page</p>
+				
+				<ul id="flexiselDemo3">
+					<li><img src="images/colorScale.png" height="80px" /></li>
+					<li><img src="images/colorClock.png" height="80px"  /></li>
+					<li><img src="images/colorRuler.png" height="80px"/></li>
+					<li><img src="images/colorThermometer.png" height="80px"  /></li>
+					<li><img src="images/colorSpedometer.png" height="80px" /></li>
+					<li><img src="images/colorCup.png" height="80px" /></li>
+					<li><img src="images/currency.png" height="80px" /></li>
+	
+				</ul>
+				<div class ="clearout"></div>
+				
 				<div data-role = "header">
 				   About Us
 				</div>
+			
 					<div data-role= "content">
 							ConvertIt is an interactive website that allows you to convert between different units of measurments.
 							If you are traveling, doing homework or simply curious about different conversions, ConvertIt allows you to choose
@@ -100,5 +121,22 @@
 				</form>
 			</section>
 		</div>
+		
+		<script type="text/javascript">
+
+$(window).load(function() {
+    
+    $("#flexiselDemo3").flexisel({
+        visibleItems: 3,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: true,
+            interval: 3000,
+            pauseOnHover: true
+        }        
+    });
+   
+});
+</script>
 	</body>
 </html>
