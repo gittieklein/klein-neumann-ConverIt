@@ -59,8 +59,38 @@ function sendEmail() {
 		$('#modalContact').find('#modal-title').html('<h4>Your message was sent!</h4>');
 		$('#modalContact').find('#modal-body').html('<p>Thank you for contacting convertIt.com You will hear back from us shortly.</p>' +
 		'<img src="images/convertitlogo.png" class="center-block img-rounded" alt="Cinque Terre" width="304" height="auto" style="background-color: black;"><br>' +
-		'<button type="button" class="btn btn-default center-block" data-dismiss="modal" id="close-confirm">Close</button>');
+		'<button type="button" class="btn btn-default center-block"  data-dismiss="modal" id="close-confirm">Close</button>');
+		
+		$('#close-confirm').onclick = resetContactForm();
 		
 	}
+	
+	function resetContactForm(){
+		 
+		$('#modalContact').find('#modal-title').html('<h4>Contact Us</h4>');
+
+		$('#modalContact').find('#modal-body').html('<div class="form-group">'+
+														'<div class="col-md-8"> '+
+															'<input type="text" id="varName" class="form-control" name="name" placeholder= "Name" />'+
+														'</div>'+
+														'<div class="col-md-4"><span id="nameErr" class="contactError" style="color: red" > <label style=" width: 100px"></label> </span></div></div>'+
+													'<div class="form-group" style="padding-top: 20px;">'+
+														'<div class="col-md-8">'+
+															'<input type="email" id="varEmail" class="form-control" name="email" placeholder="Email" />'+
+														'</div>'+
+													'<div class="col-md-4">'+
+														'<span id="emailErr" class="contactError" style="color: red"> <label style="width: 100px;"></label> </span></div>'+
+													'</div>'+
+													'<div class="form-group" style="padding-top: 20px;">'+
+													'<div class="col-md-8">'+
+														'<input type="text" id="varSubject" class="form-control" name="subject" placeholder="Subject" />'+
+													'</div>'+
+													'<div class="col-md-4"><span id="subjectErr" class="contactError" style="color: red"> <label style="width: 100px"></label> </span></div></div>'+
+													'<div class="form-group" style="padding-top: 20px;">'+
+													'<div class="col-md-12"><textarea type="text" id="varMessage" class="form-control" name="detail" placeholder="Message" ></textarea></div></div>'+
+													'<div class="form-group" style="padding-top: 75px; margin-bottom: -5px"><button type="button" id= "submit_button" class="btn btn-success center-block" onclick="sendEmail()">Submit</button></div>'	);
+	}
+	
+	
 };
 
