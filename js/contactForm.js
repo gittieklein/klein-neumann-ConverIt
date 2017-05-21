@@ -58,7 +58,7 @@ function sendEmail() {
 		});
 		$('#modalContact').find('#modal-title').html('<h4>Your message was sent!</h4>');
 		$('#modalContact').find('#modal-body').html('<p>Thank you for contacting convertIt.com You will hear back from us shortly.</p>' +
-		'<img src="images/convertitlogo.png" class="center-block img-rounded" alt="Cinque Terre" width="304" height="auto" style="background-color: black;"><br>' +
+		'<img src="images/convertItNoBkgd.PNG" class="center-block img-rounded" alt="Cinque Terre" width="304" height="auto" style="background-color: black;"><br>' +
 		'<button type="button" class="btn btn-default center-block"  data-dismiss="modal" id="close-confirm" onclick="resetContactForm()">Close</button>');
 		
 
