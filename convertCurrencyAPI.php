@@ -26,12 +26,10 @@ else if($TO_CURRENCY == "euro")
 else if($TO_CURRENCY == "british_pound")
 	$TO_CURRENCY = "GBP";
 else if($TO_CURRENCY == "canadian_dollar")
-	$TO_CURRENCY == "CAD";
-
+	$TO_CURRENCY = "CAD";
 
 $url = "https://www.exchangerate-api.com/" . $FROM_CURRENCY . "/" 
 					. $TO_CURRENCY . "/" . $AMOUNT . "?k=" . "bfe4ced123054d17e4048402";
-
 $result = file_get_contents($url);
 echo $result;
 
