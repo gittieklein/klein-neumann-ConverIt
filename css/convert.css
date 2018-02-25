@@ -2,11 +2,18 @@
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 5px;
-	margin: 100px 200px 100px 200px;
+	/*margin: 100px 200px 100px 200px;*/
+	width: 950px;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .center {
-	text-align: center;
-	
+	text-align: center;	
+}
+
+.default-cursor{
+	cursor: default !important;	
 }
 
 #numFrom  {
@@ -104,6 +111,7 @@
 	font-family: "Arial";
 	padding: 2px 5px 0 5px;
 	border-radius: 5px;
+	cursor: pointer !important;
 }  
 
 
